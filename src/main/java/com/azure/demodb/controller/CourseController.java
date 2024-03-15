@@ -20,9 +20,8 @@ public class CourseController {
         return courseRepo.findAll();
     }
 
-
-
     @PostMapping("/addCourses")
+
     public Course addCourses(@RequestBody Course course){
         return courseRepo.save(course);
     }
